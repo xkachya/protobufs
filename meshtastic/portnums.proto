@@ -210,6 +210,12 @@ enum PortNum {
   ATAK_FORWARDER = 257;
 
   /*
+   * Dzhaga Dzhaga Module
+   * 
+   */
+   DZHAGA_APP = 258;
+
+  /*
    * Currently we limit port nums to no higher than this value
    */
   MAX = 511;

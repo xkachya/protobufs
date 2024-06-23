@@ -694,6 +694,53 @@ message ModuleConfig {
   }
 
   /*
+    Dzhaga Dzhaga Module - 
+    пробний модуль
+  */
+  message DzhagaConfig {
+    /*
+     * Whether the Module is enabled
+     */
+    bool enabled = 1;
+
+    /*
+     * Destination node name
+     * Example: 
+     * Maximum length of 15 characters
+     */
+    string remote_node = 2;
+
+    /*
+     * GPIO pin to monitor for state changes
+     */
+     uint32 ready_btn_pin = 3;
+
+    /*
+     * GPIO pin to monitor for state changes
+     */
+     uint32 frbtn_pin_1 = 4;
+
+    /*
+     * GPIO pin to monitor for state changes
+     */
+     uint32 frbtn_pin_2 = 5;
+
+    /*
+     * Whether or not the GPIO pin state detection is triggered on HIGH (1)
+     * Otherwise LOW (0)
+     */
+     bool frbtn_triggered_high = 6;
+
+     /*
+      * Whether or not use INPUT_PULLUP mode for GPIO pin
+      * Only applicable if the board uses pull-up resistors on the pin
+      */
+     bool frbtn_use_pullup = 7;
+
+  }
+
+
+  /*
    * TODO: REPLACE
    */
   oneof payload_variant {
@@ -761,6 +808,11 @@ message ModuleConfig {
      * TODO: REPLACE
      */
     PaxcounterConfig paxcounter = 13;
+
+    /*
+     * TODO: REPLACE
+     */
+     DzhagaConfig dzhaga = 14;
   }
 }
 
