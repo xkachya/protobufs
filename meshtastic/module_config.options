@@ -30,4 +30,5 @@
 *DzhagaConfig.ready_btn_pin int_size:8
 *DzhagaConfig.frbtn_pin_1 int_size:8
 *DzhagaConfig.frbtn_pin_2 int_size:8
+*DzhagaConfig.frbtn_pin_3 int_size:8
 *DzhagaConfig.remote_node max_size:15
