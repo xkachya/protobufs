@@ -710,25 +710,25 @@ message ModuleConfig {
     /*
      * Whether the Module is enabled
      */
-    bool enabled = 1;
+     bool enabled = 1;
 
     /*
      * Mode for Dzhaga Dzhaga Module operation
      */
-    Dzhaga_Mode mode = 2;
+     Dzhaga_Mode mode = 2;
 
     /*
      * Destination node name
      * Example: 
      * Maximum length of 15 characters
      */
-    string remote_node = 3;
+     string remote_node = 3;
 
     /*
      * Destination node number
      * Example: 
      */
-    uint32 remote_node_num = 4;
+     fixed32 remote_node_num = 4;
 
     /*
      * GPIO pin to monitor for state changes
