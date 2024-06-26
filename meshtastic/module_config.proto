@@ -725,36 +725,42 @@ message ModuleConfig {
     string remote_node = 3;
 
     /*
-     * GPIO pin to monitor for state changes
+     * Destination node number
+     * Example: 
      */
-     uint32 ready_btn_pin = 4;
+    uint32 remote_node_num = 4;
 
     /*
      * GPIO pin to monitor for state changes
      */
-     uint32 frbtn_pin_1 = 5;
+     uint32 ready_btn_pin = 5;
 
     /*
      * GPIO pin to monitor for state changes
      */
-     uint32 frbtn_pin_2 = 6;
+     uint32 frbtn_pin_1 = 6;
 
     /*
      * GPIO pin to monitor for state changes
      */
-     uint32 frbtn_pin_3 = 7;
+     uint32 frbtn_pin_2 = 7;
+
+    /*
+     * GPIO pin to monitor for state changes
+     */
+     uint32 frbtn_pin_3 = 8;
 
     /*
      * Whether or not the GPIO pin state detection is triggered on HIGH (1)
      * Otherwise LOW (0)
      */
-     bool frbtn_triggered_high = 8;
+     bool frbtn_triggered_high = 9;
 
      /*
       * Whether or not use INPUT_PULLUP mode for GPIO pin
       * Only applicable if the board uses pull-up resistors on the pin
       */
-     bool frbtn_use_pullup = 9;
+     bool frbtn_use_pullup = 10;
 
   }
 
