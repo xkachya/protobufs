@@ -762,6 +762,19 @@ message ModuleConfig {
       */
      bool frbtn_use_pullup = 10;
 
+    /*
+     * Interval in seconds of how often we can send a message to the mesh when a state change is detected
+     */
+    uint32 minimum_broadcast_secs = 11;
+
+    /*
+     * Interval in seconds of how often we should send a message to the mesh with the current state 
+     * regardless of changes
+     * When set to 0, only state changes will be broadcasted
+     * Works as a sort of status heartbeat for peace of mind
+     */
+    uint32 state_broadcast_secs = 12;
+
   }
 
 
