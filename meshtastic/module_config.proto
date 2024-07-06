@@ -807,6 +807,11 @@ message ModuleConfig {
      */
     uint32 ready_one_secs = 18;
 
+    /*
+     * Interval in seconds to check ReadyOne timeout
+     */
+    uint32 ready_one_timeout = 19;
+
   }
 
 
