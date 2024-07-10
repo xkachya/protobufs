@@ -808,14 +808,19 @@ message ModuleConfig {
     uint32 ready_one_pin = 17;
 
     /*
+     * GPIO pin for ReadyOne LED
+     */
+    uint32 ready_one_led_pin = 18;
+
+    /*
      * Interval in seconds to check ReadyOne status
      */
-    uint32 ready_one_secs = 18;
+    uint32 ready_one_secs = 19;
 
     /*
      * Interval in seconds to check ReadyOne timeout
      */
-    uint32 ready_one_timeout = 19;
+    uint32 ready_one_timeout = 20;
 
   }
 
