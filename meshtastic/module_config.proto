@@ -738,22 +738,22 @@ message ModuleConfig {
     fixed32 remote_node_num = 4;
 
     /*
-     * GPIO pin to monitor for state changes
+     * GPIO pin to monitor for BUTTON_1 state changes 
      */
-    uint32 ready_btn_pin = 5;
+    uint32 frbtn_pin_0 = 5;
 
     /*
-     * GPIO pin to monitor for state changes
+     * GPIO pin to monitor for BUTTON_2 state changes
      */
     uint32 frbtn_pin_1 = 6;
 
     /*
-     * GPIO pin to monitor for state changes
+     * GPIO pin to monitor for BUTTON_3 state changes
      */
     uint32 frbtn_pin_2 = 7;
 
     /*
-     * GPIO pin to monitor for state changes
+     * GPIO pin to monitor for BUTTON_4 state changes
      */
     uint32 frbtn_pin_3 = 8;
 
@@ -792,7 +792,7 @@ message ModuleConfig {
      * for the tracker and sensor role this will also include the lora radio.
      * Technical Details: Works for ESP32 devices and NRF52 devices in the Sensor or Tracker roles
      */
-    bool power_control_enabled = 14;
+    bool power_saving_enabled = 14;
 
     /*
      * Interval in seconds of Active mode phase
